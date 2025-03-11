@@ -4,6 +4,22 @@ body {
     background-color: #fff;
 }
 
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* header-section*/
+
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -15,7 +31,7 @@ body {
 }
 
 .header-logo .logo-studio {
-    color:#2e2f42;
+    color: #2e2f42;
 }
 
 .nav-link {
@@ -26,7 +42,7 @@ body {
     color: #2e2f42;
 }
 
-.nav-link:hover, 
+.nav-link:hover,
 .nav-link:focus,
 .address-link:hover,
 .address-link:focus {
@@ -44,7 +60,11 @@ body {
     color: #434455;
 }
 
-.section-one {
+/* header-end*/
+
+/* hero-section */
+
+.hero {
     background-color: #2e2f42;
 }
 
@@ -67,7 +87,35 @@ body {
 
 .order-button:hover,
 .order-button:focus {
-    background-color:#404BBF;
+    background-color: #404BBF;
+}
+
+/* hero-end */
+
+/* issues-section */
+
+.issues-parag {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.issues-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/* issues-end */
+
+/* team-section */
+
+.section-team {
+    background-color: #F4F4FD
 }
 
 .team-parag {
@@ -99,25 +147,9 @@ body {
     color: #434455;
 }
 
-.issues-parag {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
+/* team-end */
 
-.issues-desc {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
-.section-three {
-    background-color: #F4F4FD
-}
+/* portfolio-section */
 
 .portfolio-parag {
     font-weight: 700;
@@ -145,17 +177,9 @@ body {
     color: #434455;
 }
 
-ul, ol {
-    list-style-type: none;
-}
+/* portfolio-end*/
 
-a {
-    text-decoration: none;
-}
-
-button {
-    cursor: pointer;
-}
+/* page-footer */
 
 .page-footer {
     background-color: #2e2f42;
@@ -172,3 +196,4 @@ button {
     color: #f4f4fd;
 }
 
+/* footer-end */
