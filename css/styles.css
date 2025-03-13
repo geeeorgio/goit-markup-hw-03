@@ -408,12 +408,7 @@ button {
     padding-bottom: 100px;
 }
 
-.page-footer .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 0px;
-}
+.page-footer .container {}
 
 .footer-logo .logo-studio {
     color: #f4f4fd;
@@ -422,7 +417,6 @@ button {
 .footer-logo {
     margin-bottom: 16px;
     display: inline-block;
-    align-self: flex-start;
 }
 
 .footer-parag {
