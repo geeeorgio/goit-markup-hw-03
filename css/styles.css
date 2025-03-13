@@ -418,9 +418,9 @@ button {
     color: #f4f4fd;
 }
 
-.page-footer .logo.footer-logo {
-    display: inline-block;
+.page-footer .logo {
     margin-bottom: 16px;
+    display: inline-block;
 }
 
 .footer-parag {
