@@ -414,16 +414,13 @@ button {
     gap: 0px;
 }
 
-.page-footer .logo.footer-logo {
-    margin-bottom: 16px;
-}
-
-.footer-logo {
-    display: inline-block;
-}
-
 .footer-logo .logo-studio {
     color: #f4f4fd;
+}
+
+.page-footer .logo.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-parag {
