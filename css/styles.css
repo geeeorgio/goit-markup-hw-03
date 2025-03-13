@@ -422,6 +422,7 @@ button {
 .footer-logo {
     margin-bottom: 16px;
     display: inline-block;
+    align-self: flex-start;
 }
 
 .footer-parag {
