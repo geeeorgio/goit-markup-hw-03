@@ -415,8 +415,11 @@ button {
 }
 
 .page-footer .logo.footer-logo {
-    display: inline-block;
     margin-bottom: 16px;
+}
+
+.page-footer a {
+    display: inline-block;
 }
 
 .footer-logo .logo-studio {
