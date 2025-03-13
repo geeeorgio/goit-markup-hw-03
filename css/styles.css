@@ -24,6 +24,8 @@ p {
 }
 
 body {
+    max-width: 1440px;
+    margin: 0 auto;
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: var(--white);
@@ -41,24 +43,45 @@ a {
     color: inherit;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 button {
     cursor: pointer;
 }
 
 .container {
     max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 100%;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
 /* header-section*/
 
+.page-header {}
+
 .page-header .container {
     display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
-.header-nav {}
+.header-left,
+.header-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -75,8 +98,6 @@ button {
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
-    padding-top: 24px;
-    padding-bottom: 24px;
     gap: 0px;
     width: 115px;
     margin-right: 76px;
@@ -91,10 +112,8 @@ button {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
-    gap: 40px;
+    column-gap: 40px;
     width: 261px;
-    padding-top: 24px;
-    padding-bottom: 24px;
     margin-right: 332px;
 }
 
@@ -117,13 +136,14 @@ button {
 }
 
 .address-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-style: normal;
 }
 
 .address-list {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 24px;
     gap: 40px;
 }
 
@@ -145,6 +165,8 @@ button {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     /*height: 100vh;*/
     background-color: #2e2f42;
 }
@@ -176,7 +198,6 @@ button {
 
     border-radius: 4px;
     padding: 16px 32px;
-    width: 169px;
     height: 56px;
 
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -199,7 +220,10 @@ button {
 
 /* issues-section */
 
-.key-issues {}
+.key-issues {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .issues-heading-visually-hidden {
     position: absolute;
@@ -216,8 +240,6 @@ button {
 .key-issues-list {
     display: flex;
     gap: 24px;
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 .issues-item {
@@ -247,6 +269,8 @@ button {
 
 .team {
     background-color: var(--cloud);
+    padding-bottom: 120px;
+    margin-bottom: 120px;
 }
 
 .team-parag {
@@ -263,11 +287,11 @@ button {
 
 .our-team-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     gap: 24px;
-    padding-bottom: 120px;
 }
 
 .team-item {
@@ -307,7 +331,11 @@ button {
 
 /* portfolio-section */
 
-.portfolio {}
+.portfolio {
+    padding-bottom: 120px;
+}
+
+.portfolio .container {}
 
 .portfolio-parag {
     font-weight: 700;
@@ -317,18 +345,37 @@ button {
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 
-.our-portfolio-list {}
+.our-portfolio-list {
+    display: flex;
+    flex-direction: row;
+    row-gap: 48px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .portfolio-item {}
+
+.portfolio-description-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+
+    padding: 32px 16px;
+    width: 360px;
+    height: 120px;
+}
 
 .portfolio-item-parag {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2e2f42;
+    color: var(--navy-blue);
 }
 
 .portfolio-item-desc {
@@ -336,7 +383,7 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--slate);
 }
 
 /* portfolio-end*/
@@ -345,6 +392,19 @@ button {
 
 .page-footer {
     background-color: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.page-footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;
+}
+
+.page-footer .logo {
+    margin-bottom: 16px;
 }
 
 .footer-logo .logo-studio {
@@ -352,7 +412,8 @@ button {
 }
 
 .footer-parag {
-    font-size: 16px;
+    max-width: 264px;
+    tex font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
