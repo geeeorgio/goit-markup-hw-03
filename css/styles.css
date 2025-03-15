@@ -302,7 +302,7 @@ button {
 }
 
 .team-item {
-    width: calc(100% / 4 - 20px);
+    width: calc((100% - 72px) / 4);
     max-width: 264px;
     text-align: center;
     border-radius: 0 0 4px 4px;
