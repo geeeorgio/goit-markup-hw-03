@@ -59,7 +59,7 @@ button {
     margin: 0 auto;
 }
 
-/* Page Header section */
+/** Page Header section */
 
 .page-header {
     border-bottom: 1px solid #e7e9fc
@@ -71,7 +71,7 @@ button {
     padding: 0 15px
 }
 
-/* for page header version 1
+/* ? for page header version 1
 .header-left,
 .header-right {
     display: flex;
@@ -79,7 +79,7 @@ button {
     flex-wrap: nowrap;
     padding: 0 15px 0 15px,
 }
-*/
+? */
 
 .header-nav {
     display: flex;
@@ -162,7 +162,7 @@ button {
 
 /* Page Header section end */
 
-/* Hero section */
+/** Hero section */
 
 .hero {
     display: flex;
@@ -171,7 +171,7 @@ button {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    /*height: 100vh;*/
+    /*? height: 100vh;*/
     background-color: #2e2f42;
     padding: 188px 0;
 }
@@ -189,7 +189,7 @@ button {
     text-align: center;
     color: var(--white);
     max-width: 496px;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
 }
 
 .order-button {
@@ -219,7 +219,7 @@ button {
 
 /* Hero section end */
 
-/* Issues section */
+/** Issues section */
 
 .key-issues {
     padding-top: 120px;
@@ -242,10 +242,13 @@ button {
 
 .key-issues-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
 }
 
 .issues-item {
+    width: calc(100% / 4 - 20px);
     min-width: 264px;
 }
 
@@ -268,7 +271,7 @@ button {
 
 /* Issues section end */
 
-/* Team section */
+/** Team section */
 
 .team {
     background-color: var(--cloud);
@@ -276,11 +279,6 @@ button {
 }
 
 .team-description-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 8px;
     padding: 32px 0;
 }
 
@@ -304,10 +302,10 @@ button {
 }
 
 .team-item {
+    width: calc(100% / 4 - 20px);
+    max-width: 264px;
+    text-align: center;
     border-radius: 0 0 4px 4px;
-    padding: 0px 0px 32px 0px;
-    width: 264px;
-    height: 380px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: var(--white);
 }
@@ -322,7 +320,6 @@ button {
 }
 
 .team-item-desc {
-    margin-bottom: 32px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -337,7 +334,7 @@ button {
 
 /* Team section end */
 
-/* Portfolio section */
+/** Portfolio section */
 
 .portfolio {
     padding: 120px 0 120px 0;
@@ -368,17 +365,9 @@ button {
 .portfolio-item {}
 
 .portfolio-description-container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    gap: 8px;
     border: 1px solid #e7e9fc;
     border-top: none;
-
     padding: 32px 16px;
-    width: 360px;
-    height: 120px;
 }
 
 .portfolio-item-parag {
@@ -400,7 +389,7 @@ button {
 
 /* Portfolio section end */
 
-/* Page Footer*/
+/** Page Footer */
 
 .page-footer {
     background-color: #2e2f42;
